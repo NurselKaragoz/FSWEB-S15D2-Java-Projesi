@@ -6,6 +6,14 @@ public class Task {
     private String project;
     private String description;
     private String assignee;
+    Priority priority;
+    Status status;
+
+    public Task(String project, String description, String assignee) {
+        this.project = project;
+        this.description = description;
+        this.assignee = assignee;
+    }
 
     @Override
     public boolean equals(Object o) {
