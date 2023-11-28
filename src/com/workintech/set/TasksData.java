@@ -8,7 +8,7 @@ public class TasksData {
    private Set<String> annsTasks= new HashSet<>();
     private Set<String> bobsTasks= new HashSet<>();
    private Set<String> carolsTasks= new HashSet<>();
-  public Set<String> unionSet = new HashSet<String>();
+   public Set<String> unionSet = new HashSet<String>();
    Task task =new Task(" design","electrical autocad plans","bob");
      public Set<String> getTasks(String variable ){
          switch (variable.toLowerCase()) {
@@ -35,6 +35,9 @@ public class TasksData {
      }
 
     public Set<String> getIntersect(Set<String> set1,Set<String> set2){
+         set1.add("xxx");
+         set2.add("yyyy");
+         set2.add("xxx");
          set1.retainAll(set2);
          return set1;
     }
